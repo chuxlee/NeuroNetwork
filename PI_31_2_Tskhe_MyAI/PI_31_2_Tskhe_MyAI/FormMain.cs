@@ -33,5 +33,10 @@ namespace PI_31_2_Tskhe_MyAI
                 inputPixels[((Button)sender).TabIndex] = 0d;
             }
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

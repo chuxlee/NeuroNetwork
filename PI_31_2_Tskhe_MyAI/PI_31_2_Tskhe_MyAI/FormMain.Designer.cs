@@ -54,9 +54,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(65, 52);
+            this.button1.Location = new System.Drawing.Point(130, 100);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 30);
+            this.button1.Size = new System.Drawing.Size(60, 58);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -65,9 +66,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(101, 52);
+            this.button2.Location = new System.Drawing.Point(202, 100);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 30);
+            this.button2.Size = new System.Drawing.Size(60, 58);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -76,9 +78,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(137, 52);
+            this.button3.Location = new System.Drawing.Point(274, 100);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.Size = new System.Drawing.Size(60, 58);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -87,9 +90,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.ForeColor = System.Drawing.Color.Transparent;
-            this.button4.Location = new System.Drawing.Point(65, 88);
+            this.button4.Location = new System.Drawing.Point(130, 169);
+            this.button4.Margin = new System.Windows.Forms.Padding(6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(30, 30);
+            this.button4.Size = new System.Drawing.Size(60, 58);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -98,9 +102,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button5.BackColor = System.Drawing.Color.White;
             this.button5.ForeColor = System.Drawing.Color.Transparent;
-            this.button5.Location = new System.Drawing.Point(101, 88);
+            this.button5.Location = new System.Drawing.Point(202, 169);
+            this.button5.Margin = new System.Windows.Forms.Padding(6);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(30, 30);
+            this.button5.Size = new System.Drawing.Size(60, 58);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -109,9 +114,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button6.BackColor = System.Drawing.Color.White;
             this.button6.ForeColor = System.Drawing.Color.Transparent;
-            this.button6.Location = new System.Drawing.Point(137, 88);
+            this.button6.Location = new System.Drawing.Point(274, 169);
+            this.button6.Margin = new System.Windows.Forms.Padding(6);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(30, 30);
+            this.button6.Size = new System.Drawing.Size(60, 58);
             this.button6.TabIndex = 5;
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -120,9 +126,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.ForeColor = System.Drawing.Color.Transparent;
-            this.button7.Location = new System.Drawing.Point(65, 124);
+            this.button7.Location = new System.Drawing.Point(130, 238);
+            this.button7.Margin = new System.Windows.Forms.Padding(6);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(30, 30);
+            this.button7.Size = new System.Drawing.Size(60, 58);
             this.button7.TabIndex = 6;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -131,9 +138,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button8.BackColor = System.Drawing.Color.White;
             this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.Location = new System.Drawing.Point(101, 124);
+            this.button8.Location = new System.Drawing.Point(202, 238);
+            this.button8.Margin = new System.Windows.Forms.Padding(6);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(30, 30);
+            this.button8.Size = new System.Drawing.Size(60, 58);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -142,9 +150,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.ForeColor = System.Drawing.Color.Transparent;
-            this.button9.Location = new System.Drawing.Point(137, 124);
+            this.button9.Location = new System.Drawing.Point(274, 238);
+            this.button9.Margin = new System.Windows.Forms.Padding(6);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(30, 30);
+            this.button9.Size = new System.Drawing.Size(60, 58);
             this.button9.TabIndex = 8;
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -153,9 +162,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button10.BackColor = System.Drawing.Color.White;
             this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.Location = new System.Drawing.Point(65, 160);
+            this.button10.Location = new System.Drawing.Point(130, 308);
+            this.button10.Margin = new System.Windows.Forms.Padding(6);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(30, 30);
+            this.button10.Size = new System.Drawing.Size(60, 58);
             this.button10.TabIndex = 9;
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -164,9 +174,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button11.BackColor = System.Drawing.Color.White;
             this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(101, 160);
+            this.button11.Location = new System.Drawing.Point(202, 308);
+            this.button11.Margin = new System.Windows.Forms.Padding(6);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(30, 30);
+            this.button11.Size = new System.Drawing.Size(60, 58);
             this.button11.TabIndex = 10;
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -175,9 +186,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button12.BackColor = System.Drawing.Color.White;
             this.button12.ForeColor = System.Drawing.Color.Transparent;
-            this.button12.Location = new System.Drawing.Point(137, 160);
+            this.button12.Location = new System.Drawing.Point(274, 308);
+            this.button12.Margin = new System.Windows.Forms.Padding(6);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(30, 30);
+            this.button12.Size = new System.Drawing.Size(60, 58);
             this.button12.TabIndex = 11;
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -186,9 +198,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button13.BackColor = System.Drawing.Color.White;
             this.button13.ForeColor = System.Drawing.Color.Transparent;
-            this.button13.Location = new System.Drawing.Point(65, 196);
+            this.button13.Location = new System.Drawing.Point(130, 377);
+            this.button13.Margin = new System.Windows.Forms.Padding(6);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(30, 30);
+            this.button13.Size = new System.Drawing.Size(60, 58);
             this.button13.TabIndex = 12;
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -197,9 +210,10 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button14.BackColor = System.Drawing.Color.White;
             this.button14.ForeColor = System.Drawing.Color.Transparent;
-            this.button14.Location = new System.Drawing.Point(101, 196);
+            this.button14.Location = new System.Drawing.Point(202, 377);
+            this.button14.Margin = new System.Windows.Forms.Padding(6);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(30, 30);
+            this.button14.Size = new System.Drawing.Size(60, 58);
             this.button14.TabIndex = 13;
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
@@ -208,43 +222,47 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.button15.BackColor = System.Drawing.Color.White;
             this.button15.ForeColor = System.Drawing.Color.Transparent;
-            this.button15.Location = new System.Drawing.Point(137, 196);
+            this.button15.Location = new System.Drawing.Point(274, 377);
+            this.button15.Margin = new System.Windows.Forms.Padding(6);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(30, 30);
+            this.button15.Size = new System.Drawing.Size(60, 58);
             this.button15.TabIndex = 14;
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.Changing_State_Pixel_Button_Click);
             // 
             // numericUpDown_NecessaryOutput
             // 
-            this.numericUpDown_NecessaryOutput.Location = new System.Drawing.Point(65, 246);
+            this.numericUpDown_NecessaryOutput.Location = new System.Drawing.Point(130, 473);
+            this.numericUpDown_NecessaryOutput.Margin = new System.Windows.Forms.Padding(6);
             this.numericUpDown_NecessaryOutput.Name = "numericUpDown_NecessaryOutput";
-            this.numericUpDown_NecessaryOutput.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown_NecessaryOutput.Size = new System.Drawing.Size(204, 31);
             this.numericUpDown_NecessaryOutput.TabIndex = 15;
             // 
             // SaveTrainSample
             // 
-            this.SaveTrainSample.Location = new System.Drawing.Point(32, 272);
+            this.SaveTrainSample.Location = new System.Drawing.Point(64, 523);
+            this.SaveTrainSample.Margin = new System.Windows.Forms.Padding(6);
             this.SaveTrainSample.Name = "SaveTrainSample";
-            this.SaveTrainSample.Size = new System.Drawing.Size(75, 23);
+            this.SaveTrainSample.Size = new System.Drawing.Size(150, 44);
             this.SaveTrainSample.TabIndex = 16;
-            this.SaveTrainSample.Text = "button16";
+            this.SaveTrainSample.Text = "SaveTrainSample";
             this.SaveTrainSample.UseVisualStyleBackColor = true;
             // 
             // SaveTestSample
             // 
-            this.SaveTestSample.Location = new System.Drawing.Point(113, 272);
+            this.SaveTestSample.Location = new System.Drawing.Point(226, 523);
+            this.SaveTestSample.Margin = new System.Windows.Forms.Padding(6);
             this.SaveTestSample.Name = "SaveTestSample";
-            this.SaveTestSample.Size = new System.Drawing.Size(75, 23);
+            this.SaveTestSample.Size = new System.Drawing.Size(150, 44);
             this.SaveTestSample.TabIndex = 17;
-            this.SaveTestSample.Text = "button17";
+            this.SaveTestSample.Text = "SaveTestSample";
             this.SaveTestSample.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.SaveTestSample);
             this.Controls.Add(this.SaveTrainSample);
             this.Controls.Add(this.numericUpDown_NecessaryOutput);
@@ -263,8 +281,10 @@ namespace PI_31_2_Tskhe_MyAI
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "FormMain";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_NecessaryOutput)).EndInit();
             this.ResumeLayout(false);
 
