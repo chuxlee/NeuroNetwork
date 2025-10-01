@@ -1,4 +1,5 @@
-﻿using System.Drawing.Text;
+﻿using System;
+using System.Drawing.Text;
 using static System.Math;
 
 namespace PI_31_2_Tskhe_MyAI.NeuroNet
@@ -14,6 +15,9 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
 
         // константы для функции активации (утекающая релу)
         // private double a = 0.01d; 
+
+        //private double a = 1;
+        //private double b = 1;
 
         // свойства 
         public double[] Weights { get => weights; set => weights = value; }
@@ -43,8 +47,8 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
             switch (type)
             {
                 case NeuronType.Hidden:
-                    output = LeakyReLU(sum); //заменить на свою функцию активации
-                    derivative = LeakyReLU_Derivativator(sum);
+                    output = TanhFunc(sum); //заменить на свою функцию активации
+                    derivative = TanhDerivative(sum);
                     break;
                 case NeuronType.Output:
                     output = Exp(sum);
@@ -53,10 +57,17 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
 
         }
         //функция активации нейрона (свою написать)
-        private double LeakyReLU(double sum)
+        private double TanhFunc(double sum)
         {
-
+            if (sum >= 20) return 1;
+            if (sum <= -20) return -1;
+            // return (Exp(2 * sum * a) - 1) / (Exp(2 * sum * b) + 1);
+            return Tanh(sum);
         }
-
+        private double TanhDerivative(double sum)
+        {
+            double tanh = TanhFunc(sum);
+            return 1 - tanh * tanh;
+        }
     }
 }
