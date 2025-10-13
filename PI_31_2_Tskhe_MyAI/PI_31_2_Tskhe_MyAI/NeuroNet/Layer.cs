@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Specialized;
 using System.IO;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
@@ -45,7 +46,7 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
                 Weights = WeightInitialize(MemoryMode.GET, pathFileWeights);
             else
             {
-                Directory.CreateDirectory(pathFileWeights);
+                Directory.CreateDirectory(pathDirWeights);
                 Weights = WeightInitialize(MemoryMode.INIT, pathFileWeights);
             }
 
@@ -67,7 +68,7 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
             char[] delim = new char[] { ';', ' ' };     // разделитель слов
             string tmpStr;                              // временная строка для чтения
             string[] tmpStrWeights;                     // временный массив строк
-            double[,] weights = new double[numofneurons, numofneurons + 1];
+            double[,] weights = new double[numofneurons, numofprevneurons + 1];
 
             switch (mm)
             {
@@ -88,15 +89,15 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
 
                 case MemoryMode.SET:
                     tmpStrWeights = new string[numofneurons];
-                    string memory_el = "";
+                    tmpStr = "";
                     for (i = 0; i < numofneurons; i++)
                     {
                         for (j = 0; j < numofprevneurons + 1; j++)
                         {
-                            memory_el += weights[i, j] + " ;";
+                            tmpStr += weights[i, j] + "; ";
                         }
-                        tmpStrWeights[i] = memory_el;
-                        memory_el = "";
+                        tmpStrWeights[i] = tmpStr;
+                        tmpStr = "";
                     }
                     File.WriteAllLines(path, tmpStrWeights);
                     break;
@@ -105,20 +106,36 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
                     Random rand = new Random();
                     for (i = 0; i < numofneurons; i++)
                     {
-                        for (j = 0; j < numofneurons + 1; j++)
+                        for (j = 0; j < numofprevneurons + 1; j++)
                         {
-                            weights[i, j] = rand.NextDouble();
+                            weights[i, j] = NextNormalNum(rand);  
                         }
                     }
+
+                    tmpStrWeights = new string[numofneurons];
+                    tmpStr = "";
+                    for (i = 0; i < numofneurons; i++)
+                    {
+                        for (j = 0; j < numofprevneurons + 1; j++)
+                        {
+                            tmpStr += weights[i, j] + ";";
+                        }
+                        tmpStrWeights[i] = tmpStr;
+                        tmpStr = "";
+                    }
+                    File.WriteAllLines(path, tmpStrWeights);
                     break;
 
             }
             return weights; 
+        }
+        
+        public double NextNormalNum(Random rand)
+        {
+            double u1 = 1.0 - rand.NextDouble();
+            double u2 = 1.0 - rand.NextDouble();
 
-            // чтобы нейросеть была умной нада:
-            //1 - все синаптические веса должны быть случайными величинами 
-            //2 - мат ожидание этих весов должно = 0
-            //3 - среднеквадратическое отклонение должно = 1
+            return Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
         }
     }
 }

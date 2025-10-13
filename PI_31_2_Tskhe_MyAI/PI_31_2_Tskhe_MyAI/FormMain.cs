@@ -44,10 +44,8 @@ namespace PI_31_2_Tskhe_MyAI
 
         private void button16_Click(object sender, EventArgs e)
         {
-            hiddenLayer = new HiddenLayer(6, 7, NeuronType.Hidden, nameof(HiddenLayer));
-            //hiddenLayer.WeightInitialize(MemoryMode.INIT, AppDomain.CurrentDomain.BaseDirectory + nameof(HiddenLayer) + "_memory.csv");
-            //hiddenLayer.WeightInitialize(MemoryMode.SET, AppDomain.CurrentDomain.BaseDirectory + nameof(HiddenLayer) + "_memory.csv");
-
+            hiddenLayer = new HiddenLayer(35, 40, NeuronType.Hidden, nameof(HiddenLayer));
+            hiddenLayer.WeightInitialize(MemoryMode.INIT, AppDomain.CurrentDomain.BaseDirectory + nameof(HiddenLayer) + "_memory.csv");
         }
 
         private void SaveTrainSample_Click(object sender, EventArgs e)
