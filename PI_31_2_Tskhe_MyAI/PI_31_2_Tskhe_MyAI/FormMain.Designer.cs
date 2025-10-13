@@ -47,6 +47,7 @@ namespace PI_31_2_Tskhe_MyAI
             this.numericUpDown_NecessaryOutput = new System.Windows.Forms.NumericUpDown();
             this.SaveTrainSample = new System.Windows.Forms.Button();
             this.SaveTestSample = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_NecessaryOutput)).BeginInit();
             this.SuspendLayout();
             // 
@@ -243,26 +244,39 @@ namespace PI_31_2_Tskhe_MyAI
             this.SaveTrainSample.Location = new System.Drawing.Point(64, 523);
             this.SaveTrainSample.Margin = new System.Windows.Forms.Padding(6);
             this.SaveTrainSample.Name = "SaveTrainSample";
-            this.SaveTrainSample.Size = new System.Drawing.Size(150, 44);
+            this.SaveTrainSample.Size = new System.Drawing.Size(150, 82);
             this.SaveTrainSample.TabIndex = 16;
             this.SaveTrainSample.Text = "SaveTrainSample";
             this.SaveTrainSample.UseVisualStyleBackColor = true;
+            this.SaveTrainSample.Click += new System.EventHandler(this.SaveTrainSample_Click);
             // 
             // SaveTestSample
             // 
             this.SaveTestSample.Location = new System.Drawing.Point(226, 523);
             this.SaveTestSample.Margin = new System.Windows.Forms.Padding(6);
             this.SaveTestSample.Name = "SaveTestSample";
-            this.SaveTestSample.Size = new System.Drawing.Size(150, 44);
+            this.SaveTestSample.Size = new System.Drawing.Size(150, 82);
             this.SaveTestSample.TabIndex = 17;
             this.SaveTestSample.Text = "SaveTestSample";
             this.SaveTestSample.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(670, 238);
+            this.button16.Margin = new System.Windows.Forms.Padding(6);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(150, 44);
+            this.button16.TabIndex = 18;
+            this.button16.Text = "button16";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.Controls.Add(this.button16);
             this.Controls.Add(this.SaveTestSample);
             this.Controls.Add(this.SaveTrainSample);
             this.Controls.Add(this.numericUpDown_NecessaryOutput);
@@ -310,6 +324,7 @@ namespace PI_31_2_Tskhe_MyAI
         private System.Windows.Forms.NumericUpDown numericUpDown_NecessaryOutput;
         private System.Windows.Forms.Button SaveTrainSample;
         private System.Windows.Forms.Button SaveTestSample;
+        private System.Windows.Forms.Button button16;
     }
 }
 

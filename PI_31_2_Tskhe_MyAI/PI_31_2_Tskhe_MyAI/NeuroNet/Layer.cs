@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace PI_31_2_Tskhe_MyAI.NeuroNet
 {
@@ -76,7 +77,7 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
                     for (i = 0; i < numofneurons; i++)
                     {
                         memory_element = tmpStrWeights[i].Split(delim); 
-                        for (j = 0; j < numofprevneurons; j++)
+                        for (j = 0; j < numofprevneurons + 1; j++)
                         {
                             weights[i, j] = double.Parse(memory_element[j].Replace(',', '.'), 
                                 System.Globalization.CultureInfo.InvariantCulture);
@@ -84,7 +85,40 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
 
                     }
                     break;
+
+                case MemoryMode.SET:
+                    tmpStrWeights = new string[numofneurons];
+                    string memory_el = "";
+                    for (i = 0; i < numofneurons; i++)
+                    {
+                        for (j = 0; j < numofprevneurons + 1; j++)
+                        {
+                            memory_el += weights[i, j] + " ;";
+                        }
+                        tmpStrWeights[i] = memory_el;
+                        memory_el = "";
+                    }
+                    File.WriteAllLines(path, tmpStrWeights);
+                    break;
+
+                case MemoryMode.INIT:
+                    Random rand = new Random();
+                    for (i = 0; i < numofneurons; i++)
+                    {
+                        for (j = 0; j < numofneurons + 1; j++)
+                        {
+                            weights[i, j] = rand.NextDouble();
+                        }
+                    }
+                    break;
+
             }
+            return weights; 
+
+            // чтобы нейросеть была умной нада:
+            //1 - все синаптические веса должны быть случайными величинами 
+            //2 - мат ожидание этих весов должно = 0
+            //3 - среднеквадратическое отклонение должно = 1
         }
     }
 }
