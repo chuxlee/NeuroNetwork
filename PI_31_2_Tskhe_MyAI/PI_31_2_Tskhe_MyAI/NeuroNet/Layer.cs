@@ -137,5 +137,9 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
 
             return Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
         }
+        
+        abstract public void Recognize(Network net, Layer nextLayer); //прямой проход
+
+        abstract public double[] BackwardPass(double[] stuff); //обратный проход
     }
 }
