@@ -50,6 +50,7 @@ namespace PI_31_2_Tskhe_MyAI
             this.buttonRecognize = new System.Windows.Forms.Button();
             this.label_output = new System.Windows.Forms.Label();
             this.label_Probability = new System.Windows.Forms.Label();
+            this.button_Training = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_NecessaryOutput)).BeginInit();
             this.SuspendLayout();
             // 
@@ -264,7 +265,7 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             // buttonRecognize
             // 
-            this.buttonRecognize.Location = new System.Drawing.Point(86, 617);
+            this.buttonRecognize.Location = new System.Drawing.Point(388, 109);
             this.buttonRecognize.Margin = new System.Windows.Forms.Padding(6);
             this.buttonRecognize.Name = "buttonRecognize";
             this.buttonRecognize.Size = new System.Drawing.Size(150, 82);
@@ -291,11 +292,23 @@ namespace PI_31_2_Tskhe_MyAI
             this.label_Probability.TabIndex = 20;
             this.label_Probability.Text = "Вероятность";
             // 
+            // button_Training
+            // 
+            this.button_Training.Location = new System.Drawing.Point(388, 225);
+            this.button_Training.Margin = new System.Windows.Forms.Padding(6);
+            this.button_Training.Name = "button_Training";
+            this.button_Training.Size = new System.Drawing.Size(150, 82);
+            this.button_Training.TabIndex = 21;
+            this.button_Training.Text = "Обучить";
+            this.button_Training.UseVisualStyleBackColor = true;
+            this.button_Training.Click += new System.EventHandler(this.button_Training_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 865);
+            this.ClientSize = new System.Drawing.Size(746, 865);
+            this.Controls.Add(this.button_Training);
             this.Controls.Add(this.label_Probability);
             this.Controls.Add(this.label_output);
             this.Controls.Add(this.buttonRecognize);
@@ -350,6 +363,7 @@ namespace PI_31_2_Tskhe_MyAI
         private System.Windows.Forms.Button buttonRecognize;
         private System.Windows.Forms.Label label_output;
         private System.Windows.Forms.Label label_Probability;
+        private System.Windows.Forms.Button button_Training;
     }
 }
 

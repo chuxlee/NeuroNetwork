@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PI_31_2_Tskhe_MyAI.NeuroNet;
 
 namespace PI_31_2_Tskhe_MyAI.NeuroNet
 {
@@ -24,6 +25,7 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
         {
             double[] gr_sum = new double[numofprevneurons];
             // дописать
+
             return gr_sum;
         }
     }

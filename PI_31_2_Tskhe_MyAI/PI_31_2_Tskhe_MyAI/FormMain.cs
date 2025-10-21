@@ -65,5 +65,16 @@ namespace PI_31_2_Tskhe_MyAI
             label_output.Text = network.Fact.ToList().IndexOf(network.Fact.Max()).ToString();
             label_Probability.Text = (100 * network.Fact.Max()).ToString("0.00") + "%";
         }
+
+        private void button_Training_Click(object sender, EventArgs e)
+        {
+            network.Train(network);
+            //for (int i = 0; i < network.E_error_avr.Length; i++)
+            //{
+            //    chart_Eavr
+            //}
+            MessageBox.Show("Обучение успешно завершено.", "Информация",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
