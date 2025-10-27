@@ -39,11 +39,6 @@ namespace PI_31_2_Tskhe_MyAI
             }
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
         
         private void SaveTrainSample_Click(object sender, EventArgs e)
         {
@@ -68,7 +63,7 @@ namespace PI_31_2_Tskhe_MyAI
 
         private void button_Training_Click(object sender, EventArgs e)
         {
-            network.Train(network);
+            // network.Train(network);
             //for (int i = 0; i < network.E_error_avr.Length; i++)
             //{
             //    chart_Eavr

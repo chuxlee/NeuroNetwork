@@ -244,28 +244,28 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             // SaveTrainSample
             // 
-            this.SaveTrainSample.Location = new System.Drawing.Point(5, 501);
+            this.SaveTrainSample.Location = new System.Drawing.Point(59, 501);
             this.SaveTrainSample.Margin = new System.Windows.Forms.Padding(6);
             this.SaveTrainSample.Name = "SaveTrainSample";
-            this.SaveTrainSample.Size = new System.Drawing.Size(150, 82);
+            this.SaveTrainSample.Size = new System.Drawing.Size(204, 103);
             this.SaveTrainSample.TabIndex = 16;
-            this.SaveTrainSample.Text = "SaveTrainSample";
+            this.SaveTrainSample.Text = "Сохранить обучающий пример";
             this.SaveTrainSample.UseVisualStyleBackColor = true;
             this.SaveTrainSample.Click += new System.EventHandler(this.SaveTrainSample_Click);
             // 
             // SaveTestSample
             // 
-            this.SaveTestSample.Location = new System.Drawing.Point(167, 501);
+            this.SaveTestSample.Location = new System.Drawing.Point(59, 616);
             this.SaveTestSample.Margin = new System.Windows.Forms.Padding(6);
             this.SaveTestSample.Name = "SaveTestSample";
-            this.SaveTestSample.Size = new System.Drawing.Size(150, 82);
+            this.SaveTestSample.Size = new System.Drawing.Size(204, 103);
             this.SaveTestSample.TabIndex = 17;
-            this.SaveTestSample.Text = "SaveTestSample";
+            this.SaveTestSample.Text = "Сохранить тестовый пример";
             this.SaveTestSample.UseVisualStyleBackColor = true;
             // 
             // buttonRecognize
             // 
-            this.buttonRecognize.Location = new System.Drawing.Point(388, 109);
+            this.buttonRecognize.Location = new System.Drawing.Point(310, 99);
             this.buttonRecognize.Margin = new System.Windows.Forms.Padding(6);
             this.buttonRecognize.Name = "buttonRecognize";
             this.buttonRecognize.Size = new System.Drawing.Size(150, 82);
@@ -276,25 +276,25 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             // label_output
             // 
-            this.label_output.AutoSize = true;
-            this.label_output.Location = new System.Drawing.Point(34, 38);
+            this.label_output.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_output.Location = new System.Drawing.Point(321, 384);
             this.label_output.Name = "label_output";
-            this.label_output.Size = new System.Drawing.Size(76, 25);
+            this.label_output.Size = new System.Drawing.Size(245, 65);
             this.label_output.TabIndex = 19;
             this.label_output.Text = "Output";
             // 
             // label_Probability
             // 
-            this.label_Probability.AutoSize = true;
-            this.label_Probability.Location = new System.Drawing.Point(138, 38);
+            this.label_Probability.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Probability.Location = new System.Drawing.Point(321, 458);
             this.label_Probability.Name = "label_Probability";
-            this.label_Probability.Size = new System.Drawing.Size(139, 25);
+            this.label_Probability.Size = new System.Drawing.Size(348, 68);
             this.label_Probability.TabIndex = 20;
             this.label_Probability.Text = "Вероятность";
             // 
             // button_Training
             // 
-            this.button_Training.Location = new System.Drawing.Point(388, 225);
+            this.button_Training.Location = new System.Drawing.Point(310, 213);
             this.button_Training.Margin = new System.Windows.Forms.Padding(6);
             this.button_Training.Name = "button_Training";
             this.button_Training.Size = new System.Drawing.Size(150, 82);
@@ -307,7 +307,7 @@ namespace PI_31_2_Tskhe_MyAI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 865);
+            this.ClientSize = new System.Drawing.Size(695, 787);
             this.Controls.Add(this.button_Training);
             this.Controls.Add(this.label_Probability);
             this.Controls.Add(this.label_output);
@@ -333,10 +333,8 @@ namespace PI_31_2_Tskhe_MyAI
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormMain";
             this.Text = "FormMain";
-            this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_NecessaryOutput)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

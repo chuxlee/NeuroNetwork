@@ -52,10 +52,30 @@ namespace PI_31_2_Tskhe_MyAI.NeuroNet
             }
         }
 
-        // НАПИСАТЬ ДОМА
         public void Shuffling_Array_Rows(double[,] arr)
         {
+            if (arr == null || arr.GetLength(0) <= 1)
+                return;
 
+            int rowCount = arr.GetLength(0);
+            int colCount = arr.GetLength(1);
+            Random random = new Random();
+
+            for (int i = rowCount - 1; i > 0; i--)
+            {
+                int j = random.Next(i + 1);
+                SwapRows(arr, i, j, colCount);
+            }
+        }
+
+        private void SwapRows(double[,] arr, int row1, int row2, int colCount)
+        {
+            for (int col = 0; col < colCount; col++)
+            { 
+                double temp = arr[row1, col];
+                arr[row1, col] = arr[row2, col];
+                arr[row2, col] = temp;
+            }
         }
     }
 }
